@@ -14,7 +14,7 @@ if (!function_exists('ding')){
         $dingTalk = app(DingTalk::class);
 
         if (empty($arguments)) {
-            return $dingTalk;
+            return $dingTalk->with();
         }
 
         if (is_string($arguments[0])) {
